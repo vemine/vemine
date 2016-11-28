@@ -1,0 +1,66 @@
+title = "Ve Mine"
+baseurl = "http://vemine.org/"
+publishdir = "public"
+contentdir = "src/hugo/content"
+layoutdir = "src/hugo/layouts"
+staticdir = "src/hugo/static"
+themesdir = "src/hugo/themes"
+languageCode = "en-US"
+
+[params]
+  # Meta parameters.
+  encoding = "utf-8"
+  description = ""
+  DefaultContentLanguage = "en"
+
+[Languages]
+[Languages.en]
+weight = 0
+languageName = "English"
+
+[[Languages.en.menu.main]]
+url    = "/#donate"
+name   = "Donate"
+weight = 1
+[[Languages.en.menu.main]]
+url    = "/#helpers"
+name   = "Helpers"
+weight = 3
+[[Languages.en.menu.main]]
+url    = "/#contact"
+name   = "Contact"
+weight = 4
+[[Languages.en.menu.main]]
+url    = "/es/"
+name   = "ES"
+weight = 5
+
+[Languages.es]
+weight = 1
+languageName = "Español"
+
+[[Languages.es.menu.main]]
+url    = "/#donate"
+name   = "Donar"
+weight = 1
+[[Languages.es.menu.main]]
+url    = "/#about"
+name   = "Sobre"
+weight = 2
+[[Languages.es.menu.main]]
+url    = "/#sponsors"
+name   = "Ayudantes"
+weight = 3
+[[Languages.es.menu.main]]
+url    = "/#contact"
+name   = "Contacto"
+weight = 4
+[[Languages.es.menu.main]]
+url    = "../"
+name   = "EN"
+weight = 5
+
+[blackfriday]
+  hrefTargetBlank = true
+
+

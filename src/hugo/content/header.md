@@ -1,4 +1,9 @@
-# Ve Mine
++++
+date = "2016-07-09T19:40:19Z"
+draft = false
+title = "Header"
+
++++
 
 # What
 ### Distribute usb digital currency miners to Venezuelan people.
@@ -15,6 +20,8 @@ The suffering and abuse of Venezuelan people is long and well documented. Hope a
 
 Emphasis added on the last sentence to show how dangerous centralization is to the Venezuelan digital currency users. Cheap and easy to distribute USB miners can make any Venezuelan into a Bitcoin user, and the small rewards generated make a big difference in a country where [$20/mo is the average salary](https://www.bloomberg.com/news/articles/2015-03-06/monthly-salary-of-20-shows-why-venezuelans-wait-in-food-lines), $1 worth of mining rewards goes a long way.
 
+***
+
 # How  
 
 ### Donate funds to purchase miners.
@@ -22,24 +29,3 @@ Emphasis added on the last sentence to show how dangerous centralization is to t
 ### Negotiate bulk purchase from manufacturer.
 
 ### Work with Venezuelan Bitcoin community to distribute miners widely and without fraud.
-
-# Developers
-
-### Version
-0.0.1
-
-### Installation
-Ve Mine requires [Hugo](https://gohugo.io/) to run.
-
-### Usage
-Open your favorite Terminal and run these commands:
-
-```sh
-$ hugo
-$ hugo server
-```
-
-Open a web browser and navigate to: `http://localhost:1313`.
-
-### Testing Mirror
-Available at @vemine's [Github Pages.](https://vemine.github.io/)

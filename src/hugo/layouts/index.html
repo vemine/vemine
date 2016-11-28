@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <link rel="icon" href="/img/tigoctm.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+  </head>
+  <body></body>
+  <div class="theme-page Header">{{ partial "menu.html" . }}
+    <div class="theme-page-container">
+      <div class="theme-page-content theme-page-content--header">
+        <div class="theme-page-content--section">
+          <div class="Header-subtitle">
+            <div class="theme-page-content--x-small">
+              {{ range where .Data.Pages ".Title" "Header" }}
+                {{ .Content }}
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="donate" class="theme-page Donate">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+        <div class="theme-page-content--small">
+          {{ if eq .Site.Language.Lang "en" }}
+            {{ range where .Data.Pages ".Title" "Donate" }}
+              {{ .Content }}
+            {{ end }}
+          {{ else if eq .Site.Language.Lang "es" }}
+            {{ range where .Data.Pages ".Title" "Donar" }}
+              {{ .Content }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="helpers" class="theme-page Helpers">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+        <div class="theme-page-content--small">
+          {{ if eq .Site.Language.Lang "en" }}
+            {{ range where .Data.Pages ".Title" "Helpers" }}
+              {{ .Content }}
+            {{ end }}
+          {{ else if eq .Site.Language.Lang "es" }}
+            {{ range where .Data.Pages ".Title" "Ayudantes" }}
+              {{ .Content }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact" class="theme-page Contact">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+	{{ if eq .Site.Language.Lang "en" }}
+            {{ range where .Data.Pages ".Title" "Contact" }}
+            <div class="theme-page-content-title">
+              <p>{{ .Title }}</p>
+            </div>
+            <div class="theme-page-content--x-small">
+            {{ .Content }}
+            </div>
+            {{ end }}
+	 {{ else if eq .Site.Language.Lang "es" }}
+            {{ range where .Data.Pages ".Title" "Contacto" }}
+            <div class="theme-page-content-title">
+              <p>{{ .Title }}</p>
+            </div>
+            <div class="theme-page-content--x-small">
+            {{ .Content }}
+            </div>
+            {{ end }}
+         {{ end }}
+      </div>
+    </div>
+  </div>
+</html>

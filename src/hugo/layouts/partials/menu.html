@@ -1,0 +1,23 @@
+
+<div class="Topbar">
+  <div class="Topbar-content">
+    <div class="TopbarContent-logo">
+      <a href="#">
+        <img src="/img/logo.svg" height="40" width="auto" />
+      </a>
+    </div>
+    <div class="TopbarContent-menu">
+      <nav>
+        <ul>
+	  {{- $currentNode := . -}}
+	  {{ range .Site.Menus.main -}}
+	  <li class="{{ if $currentNode.IsMenuCurrent "main" . }}active{{ end }}">
+            <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+	  </li>
+	  {{- end }}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+

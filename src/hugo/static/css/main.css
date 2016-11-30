@@ -417,11 +417,11 @@ h4 {
   font-size: 1.125rem; }
 
 a {
-  color: #CE002C;
+  color: #fca728;
   outline: 0;
   text-decoration: none; }
   a:hover {
-    color: #ff0238; }
+    color: #000000; }
 
 button,
 input,
@@ -1115,8 +1115,8 @@ input[type=text], textarea {
         color: white !important; }
       .theme-page-content-title p {
         border-radius: 50px;
-        border: 1px solid #CE002C;
-        color: #CE002C;
+        border: 1px solid #fca728;
+        color: #fca728;
         display: inline-block;
         font-size: 1.3125rem;
         height: 50px;
@@ -1140,7 +1140,7 @@ input[type=text], textarea {
   border-radius: 10px; }
 
 .theme-btn-primary {
-  background-color: #CE002C;
+  background-color: #fca728;
   border: 0;
   color: white; }
   .theme-btn-primary:hover {
@@ -1150,15 +1150,15 @@ input[type=text], textarea {
     color: white; }
   .theme-btn-primary--outline {
     background-color: transparent;
-    border: 2px solid #CE002C;
-    color: #CE002C; }
+    border: 2px solid #fca728;
+    color: #fca728; }
     .theme-btn-primary--outline:hover {
-      background-color: #CE002C;
+      background-color: #fca728;
       color: white; }
   .theme-btn-primary--icon {
     background-color: transparent;
     border: 0;
-    color: #CE002C; }
+    color: #fca728; }
     .theme-btn-primary--icon:hover {
       color: #9b0021; }
 
@@ -1261,7 +1261,7 @@ input[type=text], textarea {
     width: 21px; }
   .theme-form .checkbox:not(:checked) + label:after,
   .theme-form .checkbox:checked + label:after {
-    color: #CE002C;
+    color: #fca728;
     content: "\e900";
     font-family: 'icomoon';
     font-size: 18px;
@@ -1292,7 +1292,7 @@ input[type=text], textarea {
     width: 23px; }
   .theme-form .radio:not(:checked) + label:after,
   .theme-form .radio:checked + label:after {
-    background-color: #CE002C;
+    background-color: #fca728;
     border-radius: 50%;
     content: "";
     height: 15px;
@@ -1339,7 +1339,7 @@ input[type=text], textarea {
       .theme-form .toggle + label:before {
         display: none; }
     .theme-form .toggle:checked + label {
-      background-color: #CE002C; }
+      background-color: #fca728; }
       .theme-form .toggle:checked + label:after {
         left: 50%; }
   .theme-form-control {
@@ -1619,7 +1619,7 @@ input[type=text], textarea {
       margin: 20px 0; }
 
 .Benefits {
-  background-image: linear-gradient(-135deg, #CE002C 0%, #424242 100%);
+  background-image: linear-gradient(-135deg, #fca728 0%, #424242 100%);
   position: relative; }
   .Benefits-bg {
     background-color: transparent;

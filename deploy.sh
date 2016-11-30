@@ -9,7 +9,7 @@ hugo # if using a theme, replace by `hugo -t <yourtheme>`
 cd public
 # Add changes to git.
 
-echo "vemine.org" > CNAME
+#echo "vemine.org" > CNAME
 
 git add -A
 

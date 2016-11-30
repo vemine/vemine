@@ -5,7 +5,7 @@ title = "Helpers"
 
 +++
 
-# Helpers
+# Ayundantes
 
 <a href=http://bitcoinvenezuela.com><img src="/img/btcven.png" style="max-width:400px; display:inline" \></a>
 <!--<a href=http://bitcoinvenezuela.org><img src="/img/fundacion_bitcoin_venezuela.png" style="display:inline" \></a>-->

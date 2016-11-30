@@ -23,17 +23,29 @@ url    = "/#donate"
 name   = "Donate"
 weight = 1
 [[Languages.en.menu.main]]
+url    = "/#what"
+name   = "What"
+weight = 2
+[[Languages.en.menu.main]]
+url    = "/#why"
+name   = "Why"
+weight = 3
+[[Languages.en.menu.main]]
+url    = "/#how"
+name   = "How"
+weight = 4
+[[Languages.en.menu.main]]
 url    = "/#helpers"
 name   = "Helpers"
-weight = 3
+weight = 5
 [[Languages.en.menu.main]]
 url    = "/#contact"
 name   = "Contact"
-weight = 4
+weight = 6
 [[Languages.en.menu.main]]
 url    = "/es/"
 name   = "ES"
-weight = 5
+weight = 7
 
 [Languages.es]
 weight = 1
@@ -44,21 +56,29 @@ url    = "/#donate"
 name   = "Donar"
 weight = 1
 [[Languages.es.menu.main]]
-url    = "/#about"
-name   = "Sobre"
+url    = "/#what"
+name   = "Que"
 weight = 2
 [[Languages.es.menu.main]]
-url    = "/#sponsors"
-name   = "Ayudantes"
+url    = "/#why"
+name   = "Por Que"
 weight = 3
+[[Languages.es.menu.main]]
+url    = "/#how"
+name   = "Como"
+weight = 4
+[[Languages.es.menu.main]]
+url    = "/#helpers"
+name   = "Ayudantes"
+weight = 5
 [[Languages.es.menu.main]]
 url    = "/#contact"
 name   = "Contacto"
-weight = 4
+weight = 6
 [[Languages.es.menu.main]]
 url    = "../"
 name   = "EN"
-weight = 5
+weight = 7
 
 [blackfriday]
   hrefTargetBlank = true

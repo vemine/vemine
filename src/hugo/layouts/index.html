@@ -8,31 +8,71 @@
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
   <body></body>
-  <div class="theme-page Header">{{ partial "menu.html" . }}
+  <div id="donate" class="theme-page Header">{{ partial "menu.html" . }}
     <div class="theme-page-container">
       <div class="theme-page-content theme-page-content--header">
-        <div class="theme-page-content--section">
           <div class="Header-subtitle">
             <div class="theme-page-content--x-small">
-              {{ range where .Data.Pages ".Title" "Header" }}
-                {{ .Content }}
+              {{ if eq .Site.Language.Lang "en" }}
+                {{ range where .Data.Pages ".Title" "Donate" }}
+                  {{ .Content }}
+                {{ end }}
+              {{ else if eq .Site.Language.Lang "es" }}
+                {{ range where .Data.Pages ".Title" "Donar" }}
+                  {{ .Content }}
+                {{ end }}
               {{ end }}
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
-  <div id="donate" class="theme-page Donate">
+  <div id="about" class="theme-page What">
     <div class="theme-page-container">
       <div class="theme-page-content">
         <div class="theme-page-content--small">
           {{ if eq .Site.Language.Lang "en" }}
-            {{ range where .Data.Pages ".Title" "Donate" }}
+            {{ range where .Data.Pages ".Title" "What" }}
               {{ .Content }}
             {{ end }}
           {{ else if eq .Site.Language.Lang "es" }}
-            {{ range where .Data.Pages ".Title" "Donar" }}
+            {{ range where .Data.Pages ".Title" "Que" }}
+              {{ .Content }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="theme-page Why">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+        <div class="theme-page-content--small">
+          {{ if eq .Site.Language.Lang "en" }}
+            {{ range where .Data.Pages ".Title" "Why" }}
+              {{ .Content }}
+            {{ end }}
+          {{ else if eq .Site.Language.Lang "es" }}
+            {{ range where .Data.Pages ".Title" "Por Que" }}
+              {{ .Content }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="theme-page How">
+    <div class="theme-page-container">
+      <div class="theme-page-content">
+        <div class="theme-page-content--small">
+          {{ if eq .Site.Language.Lang "en" }}
+            {{ range where .Data.Pages ".Title" "How" }}
+              {{ .Content }}
+            {{ end }}
+          {{ else if eq .Site.Language.Lang "es" }}
+            {{ range where .Data.Pages ".Title" "Como" }}
               {{ .Content }}
             {{ end }}
           {{ end }}
@@ -44,7 +84,7 @@
   <div id="helpers" class="theme-page Helpers">
     <div class="theme-page-container">
       <div class="theme-page-content">
-        <div class="theme-page-content--small">
+        <div class="theme-page-content--section">
           {{ if eq .Site.Language.Lang "en" }}
             {{ range where .Data.Pages ".Title" "Helpers" }}
               {{ .Content }}
@@ -64,18 +104,12 @@
       <div class="theme-page-content">
 	{{ if eq .Site.Language.Lang "en" }}
             {{ range where .Data.Pages ".Title" "Contact" }}
-            <div class="theme-page-content-title">
-              <p>{{ .Title }}</p>
-            </div>
             <div class="theme-page-content--x-small">
             {{ .Content }}
             </div>
             {{ end }}
 	 {{ else if eq .Site.Language.Lang "es" }}
             {{ range where .Data.Pages ".Title" "Contacto" }}
-            <div class="theme-page-content-title">
-              <p>{{ .Title }}</p>
-            </div>
             <div class="theme-page-content--x-small">
             {{ .Content }}
             </div>
